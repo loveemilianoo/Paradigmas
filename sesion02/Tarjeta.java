@@ -13,7 +13,6 @@ public class Tarjeta{
 	public void setNoTarhjeta(String noTarjeta){
 		this.noTarjeta = noTarjeta;
 	}
-
 	public String getNip (){
 		return this.nip;
 	}

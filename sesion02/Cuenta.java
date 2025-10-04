@@ -5,6 +5,10 @@ public class Cuenta{
 	private double saldo;
 	private Tarjeta tarjeta;
 
+	public Cuenta (double saldo, Tarjeta tarjeta){
+		this.saldo= saldo;
+		this.tarjeta= tarjeta;
+	}
 	public Cuenta (double saldo){
 		this.saldo= saldo;
 	}
@@ -28,11 +32,10 @@ public class Cuenta{
 	}
 
 	public Tarjeta getTarjeta(){
-		return this.Tarjeta;
+		return this.tarjeta;
 	}
-	public Tarjeta setTarjeta(Tarjeta tarjeta){
-		this.Tarjeta= tarjeta;
+	public void setTarjeta(Tarjeta tarjeta){
+		this.tarjeta= tarjeta;
 	}
 
-	//Get y Set de tarjeta y añadir la tarjeta al constructor
 }
