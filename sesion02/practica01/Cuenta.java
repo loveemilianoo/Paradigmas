@@ -37,5 +37,4 @@ public class Cuenta{
 	public void setTarjeta(Tarjeta tarjeta){
 		this.tarjeta= tarjeta;
 	}
-
 }

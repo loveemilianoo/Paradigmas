@@ -18,12 +18,12 @@ public class Main{
 		switch (opci){
 			case 1:
 				System.out.println("Cuando desea ingresar? ");
-				double ingreso = sc.nextInt();
+				double ingreso = sc.nextDouble();
 				c1.deposito(ingreso);
 				break;
 			case 2:
 			 	System.out.println("Cuanto desea retirar?");
-				double retiro = sc.nextInt();
+				double retiro = sc.nextDouble();
 				c1.retiro(retiro);
 				break;
 			case 3:
