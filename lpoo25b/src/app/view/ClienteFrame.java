@@ -98,7 +98,12 @@ public class ClienteFrame extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaClientes = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del cliente"));
 
@@ -558,6 +563,12 @@ public class ClienteFrame extends javax.swing.JFrame {
         
         javax.swing.JOptionPane.showMessageDialog(this, "Cliente eliminado");
     }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        this.setVisible(false);
+        MainFrame main = new MainFrame();
+        main.setVisible(true);
+    }//GEN-LAST:event_formWindowClosed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
